@@ -96,6 +96,42 @@ namespace Matriz
             textBox8.Text = string.Concat(m1.EncontrarElementoW(int.Parse(textBox9.Text)));
         }
 
+        private void cargarMatrizConEsquemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.CargarMatrizConEsquema(int.Parse(textBox1.Text), int.Parse(textBox2.Text),int.Parse(textBox3.Text), int.Parse(textBox4.Text));
+            textBox5.Text = m1.Descargar();
+        }
+
+        private void encontrarElementoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //int nf, nc;
+            //    nf = 0; nc = 0;
+            //m1.BuscarElemento(int.Parse(textBox1.Text), int.Parse(textBox2.Text),int.Parse(textBox9.Text));
+        }
+
+        private void mayorDeUnaFilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox8.Text = string.Concat(m1.EncontrarElementoMayorDeFila(int.Parse(textBox1.Text)));
+        }
+
+        private void mayorDeTodasLasFilasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.MayorDeTodasFilas();
+            textBox8.Text = m1.Descargar();
+        }
+
+        private void ordenarUnaColumnaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.OrdenarUnaColumna(int.Parse(textBox2.Text));
+            textBox8.Text = m1.Descargar();
+        }
+
+        private void ordenarTodasLasColumasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.OrdenarTodasLasColumnas();
+            textBox8.Text = m1.Descargar();
+        }
+
         private void cagar1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             m1.Cargar1(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text));

@@ -38,6 +38,7 @@
             this.acumuladorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.multiplicaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.encontrarElementoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.encontrarElemetoWhileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.descargaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +61,12 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.encontrarElemetoWhileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarMatrizConEsquemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.encontrarElementoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mayorDeUnaFilaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mayorDeTodasLasFilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenarUnaColumnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenarTodasLasColumasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +93,13 @@
             this.acumuladorToolStripMenuItem,
             this.multiplicaciónToolStripMenuItem,
             this.encontrarElementoToolStripMenuItem,
-            this.encontrarElemetoWhileToolStripMenuItem});
+            this.encontrarElemetoWhileToolStripMenuItem,
+            this.cargarMatrizConEsquemaToolStripMenuItem,
+            this.encontrarElementoToolStripMenuItem1,
+            this.mayorDeUnaFilaToolStripMenuItem,
+            this.mayorDeTodasLasFilasToolStripMenuItem,
+            this.ordenarUnaColumnaToolStripMenuItem,
+            this.ordenarTodasLasColumasToolStripMenuItem});
             this.menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
             this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.menu1ToolStripMenuItem.Text = "Matriz 1";
@@ -95,58 +107,65 @@
             // cargarToolStripMenuItem
             // 
             this.cargarToolStripMenuItem.Name = "cargarToolStripMenuItem";
-            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.cargarToolStripMenuItem.Text = "Cargar";
             this.cargarToolStripMenuItem.Click += new System.EventHandler(this.cargarToolStripMenuItem_Click);
             // 
             // descargarToolStripMenuItem
             // 
             this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
-            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.descargarToolStripMenuItem.Text = "Descargar";
             this.descargarToolStripMenuItem.Click += new System.EventHandler(this.descargarToolStripMenuItem_Click);
             // 
             // cagar1ToolStripMenuItem
             // 
             this.cagar1ToolStripMenuItem.Name = "cagar1ToolStripMenuItem";
-            this.cagar1ToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.cagar1ToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.cagar1ToolStripMenuItem.Text = "Cagar1";
             this.cagar1ToolStripMenuItem.Click += new System.EventHandler(this.cagar1ToolStripMenuItem_Click);
             // 
             // cagar2ToolStripMenuItem
             // 
             this.cagar2ToolStripMenuItem.Name = "cagar2ToolStripMenuItem";
-            this.cagar2ToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.cagar2ToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.cagar2ToolStripMenuItem.Text = "Cagar2";
             this.cagar2ToolStripMenuItem.Click += new System.EventHandler(this.cagar2ToolStripMenuItem_Click);
             // 
             // sumaDeMatricsToolStripMenuItem
             // 
             this.sumaDeMatricsToolStripMenuItem.Name = "sumaDeMatricsToolStripMenuItem";
-            this.sumaDeMatricsToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.sumaDeMatricsToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.sumaDeMatricsToolStripMenuItem.Text = "Suma de Matrices";
             this.sumaDeMatricsToolStripMenuItem.Click += new System.EventHandler(this.sumaDeMatricsToolStripMenuItem_Click);
             // 
             // acumuladorToolStripMenuItem
             // 
             this.acumuladorToolStripMenuItem.Name = "acumuladorToolStripMenuItem";
-            this.acumuladorToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.acumuladorToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.acumuladorToolStripMenuItem.Text = "Acumulador";
             this.acumuladorToolStripMenuItem.Click += new System.EventHandler(this.acumuladorToolStripMenuItem_Click);
             // 
             // multiplicaciónToolStripMenuItem
             // 
             this.multiplicaciónToolStripMenuItem.Name = "multiplicaciónToolStripMenuItem";
-            this.multiplicaciónToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.multiplicaciónToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.multiplicaciónToolStripMenuItem.Text = "Multiplicación";
             this.multiplicaciónToolStripMenuItem.Click += new System.EventHandler(this.multiplicaciónToolStripMenuItem_Click);
             // 
             // encontrarElementoToolStripMenuItem
             // 
             this.encontrarElementoToolStripMenuItem.Name = "encontrarElementoToolStripMenuItem";
-            this.encontrarElementoToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.encontrarElementoToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.encontrarElementoToolStripMenuItem.Text = "Encontrar elemento(Break) ";
             this.encontrarElementoToolStripMenuItem.Click += new System.EventHandler(this.encontrarElementoToolStripMenuItem_Click);
+            // 
+            // encontrarElemetoWhileToolStripMenuItem
+            // 
+            this.encontrarElemetoWhileToolStripMenuItem.Name = "encontrarElemetoWhileToolStripMenuItem";
+            this.encontrarElemetoWhileToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.encontrarElemetoWhileToolStripMenuItem.Text = "Encontrar elemeto(While)";
+            this.encontrarElemetoWhileToolStripMenuItem.Click += new System.EventHandler(this.encontrarElemetoWhileToolStripMenuItem_Click);
             // 
             // menu2ToolStripMenuItem
             // 
@@ -323,12 +342,47 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Elemento";
             // 
-            // encontrarElemetoWhileToolStripMenuItem
+            // cargarMatrizConEsquemaToolStripMenuItem
             // 
-            this.encontrarElemetoWhileToolStripMenuItem.Name = "encontrarElemetoWhileToolStripMenuItem";
-            this.encontrarElemetoWhileToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.encontrarElemetoWhileToolStripMenuItem.Text = "Encontrar elemeto(While)";
-            this.encontrarElemetoWhileToolStripMenuItem.Click += new System.EventHandler(this.encontrarElemetoWhileToolStripMenuItem_Click);
+            this.cargarMatrizConEsquemaToolStripMenuItem.Name = "cargarMatrizConEsquemaToolStripMenuItem";
+            this.cargarMatrizConEsquemaToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.cargarMatrizConEsquemaToolStripMenuItem.Text = "Cargar Matriz con Esquema";
+            this.cargarMatrizConEsquemaToolStripMenuItem.Click += new System.EventHandler(this.cargarMatrizConEsquemaToolStripMenuItem_Click);
+            // 
+            // encontrarElementoToolStripMenuItem1
+            // 
+            this.encontrarElementoToolStripMenuItem1.Name = "encontrarElementoToolStripMenuItem1";
+            this.encontrarElementoToolStripMenuItem1.Size = new System.Drawing.Size(219, 22);
+            this.encontrarElementoToolStripMenuItem1.Text = "Buscar Elemento";
+            this.encontrarElementoToolStripMenuItem1.Click += new System.EventHandler(this.encontrarElementoToolStripMenuItem1_Click);
+            // 
+            // mayorDeUnaFilaToolStripMenuItem
+            // 
+            this.mayorDeUnaFilaToolStripMenuItem.Name = "mayorDeUnaFilaToolStripMenuItem";
+            this.mayorDeUnaFilaToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.mayorDeUnaFilaToolStripMenuItem.Text = "Mayor de una fila";
+            this.mayorDeUnaFilaToolStripMenuItem.Click += new System.EventHandler(this.mayorDeUnaFilaToolStripMenuItem_Click);
+            // 
+            // mayorDeTodasLasFilasToolStripMenuItem
+            // 
+            this.mayorDeTodasLasFilasToolStripMenuItem.Name = "mayorDeTodasLasFilasToolStripMenuItem";
+            this.mayorDeTodasLasFilasToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.mayorDeTodasLasFilasToolStripMenuItem.Text = "Mayor de todas las filas ";
+            this.mayorDeTodasLasFilasToolStripMenuItem.Click += new System.EventHandler(this.mayorDeTodasLasFilasToolStripMenuItem_Click);
+            // 
+            // ordenarUnaColumnaToolStripMenuItem
+            // 
+            this.ordenarUnaColumnaToolStripMenuItem.Name = "ordenarUnaColumnaToolStripMenuItem";
+            this.ordenarUnaColumnaToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.ordenarUnaColumnaToolStripMenuItem.Text = "Ordenar una columna";
+            this.ordenarUnaColumnaToolStripMenuItem.Click += new System.EventHandler(this.ordenarUnaColumnaToolStripMenuItem_Click);
+            // 
+            // ordenarTodasLasColumasToolStripMenuItem
+            // 
+            this.ordenarTodasLasColumasToolStripMenuItem.Name = "ordenarTodasLasColumasToolStripMenuItem";
+            this.ordenarTodasLasColumasToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.ordenarTodasLasColumasToolStripMenuItem.Text = "Ordenar todas las columas";
+            this.ordenarTodasLasColumasToolStripMenuItem.Click += new System.EventHandler(this.ordenarTodasLasColumasToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -399,6 +453,12 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripMenuItem encontrarElemetoWhileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargarMatrizConEsquemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem encontrarElementoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mayorDeUnaFilaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mayorDeTodasLasFilasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenarUnaColumnaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenarTodasLasColumasToolStripMenuItem;
     }
 }
 

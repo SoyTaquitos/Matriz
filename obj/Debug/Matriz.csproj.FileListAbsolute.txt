@@ -10,3 +10,9 @@ D:\Visual Studio 2015\PROYECTOS\Clase Matriz\Matriz\Matriz\obj\Debug\Matriz.pdb
 D:\Visual Studio 2015\PROYECTOS\Clase Matriz\Matriz\bin\Debug\Matriz.exe.config
 D:\Visual Studio 2015\PROYECTOS\Clase Matriz\Matriz\obj\Debug\Matriz.exe
 D:\Visual Studio 2015\PROYECTOS\Clase Matriz\Matriz\obj\Debug\Matriz.pdb
+D:\Visual Studio 2015\PROYECTOS\Clase Matriz\Matriz\bin\Debug\Matriz.exe
+D:\Visual Studio 2015\PROYECTOS\Clase Matriz\Matriz\bin\Debug\Matriz.pdb
+D:\Visual Studio 2015\PROYECTOS\Clase Matriz\Matriz\obj\Debug\Matriz.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2015\PROYECTOS\Clase Matriz\Matriz\obj\Debug\Matriz.Form1.resources
+D:\Visual Studio 2015\PROYECTOS\Clase Matriz\Matriz\obj\Debug\Matriz.Properties.Resources.resources
+D:\Visual Studio 2015\PROYECTOS\Clase Matriz\Matriz\obj\Debug\Matriz.csproj.GenerateResource.Cache

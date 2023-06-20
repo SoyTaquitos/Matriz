@@ -147,5 +147,83 @@ namespace Matriz
             }
             return b;
         }
+        public void CargarMatrizConEsquema(int nf,int nc,int vi, int r)
+        {
+            int i = 0;
+            f = nf; c = nc;
+            for (int c1 = 1; c1 <= c; c1++)
+            {
+                for (int f1 = f; f1 >= 1; f1--)
+                {
+                    i++;
+                    m[f1, c1] = vi + (i - 1) * r;
+                }
+            }            
+        }
+        //public void BuscarElemento(int nf,int nc ,int ele)
+        //{
+        //    int c1 = 1; nf = 0; nc = 0;
+        //    int f1 = 0;
+        //    while ((c1 <= c) && (nf == 0))
+        //    {
+        //        f1 = f;
+        //        while ((f1 >= 1) && (nf == 0))
+        //        {
+        //            if (m[f1, c1] == ele)
+        //            {
+        //                nf = f1;
+        //                nc = c1;
+        //            }
+        //            f1--;
+        //        }
+        //        c1++;
+        //    }
+        //}
+        public int EncontrarElementoMayorDeFila(int nf)
+        {
+            int may = m[nf,1];
+            for (int c1 = 2; c1 <= c; c1++)
+            {
+                if (m[nf, c1] > may)
+                    may = m[nf, c1];
+            }
+            return may;
+        }
+        public void MayorDeTodasFilas()
+        {
+            for (int f1 = 1; f1 <= f; f1++)
+            {
+                m[f1, c + 1] = EncontrarElementoMayorDeFila(f1);
+            }
+            c++;
+        }
+        public  void Intercambiar(int f1,int c1,int f2,int c2)
+        {
+            int aux;
+            aux = m[f1, c1];
+            m[f1, c1] = m[f2, c2];
+            m[f2, c2] = aux;
+        }
+        public void OrdenarUnaColumna(int nc)
+        {
+            for (int t = 1; t <= f-1; t++)
+            {
+                for (int d = f; d >= t + 1; d--)
+                {
+                    if (m[d, nc] > m[d - 1, nc])
+                        this.Intercambiar(d, nc, d - 1, nc);
+                }
+            }
+        }
+        public void OrdenarTodasLasColumnas()
+        {
+            for (int c1 = 1; c1 <= c; c1++)
+            {
+                this.OrdenarUnaColumna(c1);
+            }
+        }
+
+
+
     }
 }
