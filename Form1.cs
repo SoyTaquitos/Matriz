@@ -132,6 +132,24 @@ namespace Matriz
             textBox8.Text = m1.Descargar();
         }
 
+        private void ordenarColumnasPorNúmerosDeElementosDiferentesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.OrdenarColumnasPorNumEleDif();
+            textBox8.Text = m1.Descargar();
+        }
+
+        private void ordenarFilasPorNúmeroMayorDeFilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.OrdenarFilasPorMayDeCadaFila();
+            textBox8.Text = m1.Descargar();
+        }
+
+        private void ordenarMatrizPorFilasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            m1.OrdenarMatrizPorFila();
+            textBox8.Text = m1.Descargar();
+        }
+
         private void cagar1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             m1.Cargar1(int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text));

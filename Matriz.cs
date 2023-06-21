@@ -222,6 +222,92 @@ namespace Matriz
                 this.OrdenarUnaColumna(c1);
             }
         }
+        public int EncontrarElementosDiferentes(int nc)
+        {
+            int ne = 0;
+            int f1 = 1;
+            int ele = 0;
+            while (f1 <= f)
+            {
+                ele = m[f1, nc];
+                while ((f1 <= f)&&(ele == m[f1,nc]))
+                {
+                    f1++;
+                }
+                ne++;
+            }
+            return ne;
+        }
+        public void Intercambiar2Columnas(int nc1,int nc2)
+        {
+            for (int f1 = 1; f1 <= f; f1++)
+            {
+                Intercambiar(f1, nc1, f1, nc2);
+            }
+        }
+        public void OrdenarColumnasPorNumEleDif()
+        {
+            for (int p = 1; p <= c -1; p++)
+            {
+                for (int d = p +1; d <= c; d++)
+                {
+                    if(this.EncontrarElementosDiferentes(d)<this.EncontrarElementosDiferentes(p))
+                    {
+                        Intercambiar2Columnas(d, p);
+                    }
+                }
+            }
+        }
+        public void IntercambiarFilas(int nf1,int nf2)
+        {
+            for (int c1 = 1; c1 <= c; c1++)
+            {
+                this.Intercambiar(nf1, c1, nf2, c1);
+            }
+        }
+        public void OrdenarFilasPorMayDeCadaFila()
+        {
+            for (int p = 1; p <= f-1; p++)
+            {
+                for (int d = p + 1; d <= f; d++)
+                {
+                    if(EncontrarElementoMayorDeFila(d)<EncontrarElementoMayorDeFila(p))
+                    {
+                        this.IntercambiarFilas(d, f);
+                    }
+                }
+            }
+        }
+        public void OrdenarMatrizPorFila()
+        {
+            int i;
+            for (int fp = 1; fp <= f; fp++)
+            {
+                for (int cp = 1; cp <= c; cp++)
+                {
+                    for (int fd = fp; fd <= f; fd++)
+                    {
+                        if(fd == fp)
+                        {
+                            i = cp;
+                        }
+                        else
+                        {
+                            i = 1;
+                        }
+                        for (int cd = i; cd <= c; cd++)
+                        {
+                            if(m[fd,cd] < m[fp,cp])
+                            {
+                                this.Intercambiar(fd, cd, fp, cp);
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+
 
 
 
